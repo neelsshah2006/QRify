@@ -11,6 +11,7 @@ nav {
     height: 15vh;
     width: 100vw;
     margin-bottom: 10px;
+    padding: 7px 0 0 0;
 }
 
 span {
@@ -52,8 +53,6 @@ input {
     width: 80%;
     height: 40px;
     font-size: 1.1rem;
-    user-select: all;
-    -webkit-user-select: all;
 }
 
 .generatebtn,
@@ -96,13 +95,22 @@ input {
 }
 
 .footer {
-    font-size: 1.1rem;
+    font-size: 17.6px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: calc((100vw - 226.637px)/2);
 }
 
 @media screen and ((max-width: 1000px)) {
     main {
         flex-direction: column;
         overflow-y: scroll;
+        justify-content: space-around;
+        gap: 50px;
+        height: 50vh;
     }
 
     .sidebar {
@@ -111,11 +119,23 @@ input {
 
     .home {
         width: 100%;
+        height: 30%;
     }
 }
 
 @media screen and (max-width: 680px) {
     html {
-        font-size: 13px;
+        font-size: 10px;
+    }
+
+    .sidebar {
+        flex-direction: column;
+    }
+
+    .data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
