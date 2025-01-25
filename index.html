@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRify - Your own QR Code Generator</title>
+    <link rel="shortcut icon" href="./assets/images/logo.avif" type="image/x-icon">
+    <link rel="stylesheet" href="./style/variable.css">
+    <link rel="stylesheet" href="./style/utility.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/pseudo.css">
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <nav class="flex justify-center align-center">
+                <section class="flex justify-center align-center gap">
+                    <img src="./assets/images/logo.avif" alt="Logo - Qrify" width="100">
+                    <span>QRify</span>
+                </section>
+            </nav>
+        </header>
+        <main class="flex align-center border curve-border gap">
+            <section class="sidebar flex justify-center align-center ">
+                <img src="./assets/images/logo.avif" alt="Logo - QRify" width="200">
+                <div>
+                    <h1>Generate QR Code</h1>
+                    <p>in seconds with <span>QRify</span></p>
+                </div>
+            </section>
+            <section class="home flex justify-center align-center vertical gap">
+                <label for="qrInput">
+                    <h2>Enter Text or URL: </h2>
+                </label>
+                <input type="text" class="curve-border-2 p-1 border" name="qrInput" id="qrInput"
+                    placeholder="Enter URL or Text">
+                <button class="generatebtn p-1 border curve-border pointer" id="generateBtn">Generate QR Code</button>
+            </section>
+        </main>
+
+        <footer class="m-1">
+            <div class="footer flex justify-center align-center">
+                Made with &hearts; by NEEL SHAH
+            </div>
+        </footer>
+    </div>
+
+    <div class="flex justify-center align-center">
+        <section class="qrPop flex vertical justify-center align-center curve-border p-1 gap">
+            <h2>QR Generated</h2>
+            <img class="qrimg" src="" alt="" width="250">
+            <button class="download border curve-border" id="Download">Download QR</button>
+            <button class="closeBtn curve-border" id="closebtn">Close</button>
+        </section>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

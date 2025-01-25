@@ -1,0 +1,16 @@
+::selection {
+    user-select: none;
+}
+
+.generatebtn:hover,
+.download:hover,
+.closeBtn:hover {
+    scale: 1.09;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}

@@ -1,0 +1,121 @@
+body {
+    background-color: var(--primary-color);
+    overflow-x: hidden;
+}
+
+.opacity {
+    opacity: 0.4;
+}
+
+nav {
+    height: 15vh;
+    width: 100vw;
+    margin-bottom: 10px;
+}
+
+span {
+    font-family: "Playwrite IN", serif;
+    font-weight: 600;
+}
+
+nav>section {
+    background-color: var(--primary-color);
+}
+
+nav span {
+    font-size: 2rem;
+}
+
+main {
+    margin: auto;
+    width: 80vw;
+    height: 75vh;
+    justify-content: space-around;
+    box-shadow: 7px 14px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+.home {
+    width: 30%;
+    height: 50%;
+    background-color: var(--secondary-color);
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+input {
+    width: 80%;
+    height: 40px;
+    font-size: 1.1rem;
+    user-select: all;
+    -webkit-user-select: all;
+}
+
+.generatebtn,
+.download,
+.closeBtn {
+    height: 50px;
+    width: 80%;
+    background-color: var(--text-color);
+    font-size: 1.1rem;
+    color: #fff;
+    transition: scale 0.3s;
+    font-weight: 700;
+}
+
+.qrPop {
+    background-color: rgb(127, 197, 255);
+    height: 450px;
+    width: 300px;
+    position: absolute;
+    opacity: 0;
+    transform: scale(0);
+    bottom: 60%;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.5);
+    background-blend-mode: lighten;
+    color: #fff;
+    transition: transform 0.5s ease-in-out,
+        opacity 0.5s,
+        bottom 0.5s ease-in-out;
+}
+
+.show {
+    transform: scale(1);
+    opacity: 1;
+    bottom: 15%;
+}
+
+.closeBtn {
+    background-color: var(--primary-color);
+    border: 2px solid black
+}
+
+.footer {
+    font-size: 1.1rem;
+}
+
+@media screen and ((max-width: 1000px)) {
+    main {
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .home {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    html {
+        font-size: 13px;
+    }
+}
